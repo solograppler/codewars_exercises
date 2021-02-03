@@ -9,5 +9,3 @@ const fizzBuzz = (x) => {
     }
   }
 };
-
-fizzBuzz(50);
