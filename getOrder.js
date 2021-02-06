@@ -69,3 +69,5 @@ function getOrderHi(input) {
 console.log(
   getOrderHi("milkshakepizzachickenfriescokeburgerpizzasandwichmilkshakepizza")
 );
+
+// This code is experimental and it is being used to understand how regular expressions work.
