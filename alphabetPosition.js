@@ -1,4 +1,4 @@
-function alphabetPosition(text) {
+function alphabetPositionW(text) {
   let str = text.toLowerCase();
   let anum = {
     a: 1,
@@ -36,5 +36,23 @@ function alphabetPosition(text) {
     .join(" ");
 }
 
+function alphabetPosition(text) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  const alphaPos = [];
+
+  text = text.toLowerCase();
+
+  for (let i = 0; i < text.length; i++) {
+    let index = alphabet.indexOf(text[i]);
+
+    if (index === -1) {
+      continue;
+    } else {
+      alphaPos.push(index + 1);
+    }
+  }
+  return alphaPos.join(" ");
+}
+
 let crazy = alphabetPosition("The sunset sets at twelve o' clock.");
-console.log(typeof crazy);
+console.log(crazy);
